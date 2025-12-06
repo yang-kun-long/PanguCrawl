@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: deep_crawler_db
+    restart: always
+    environment:
+      POSTGRES_USER: crawler_user
+      POSTGRES_PASSWORD: crawler_password
+      POSTGRES_DB: crawler_db
+    ports:
+      - "5435:5432"
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data
+    networks:
+      - crawler_net
+
+networks:
+  crawler_net:
+    driver: bridge
