@@ -1,11 +1,4 @@
-您说得对，之前的启动流程确实比较通用，没有结合我们刚刚增加的 `check_keys.py` 以及您实际的文件结构（如 `run.py` 启动方式、Conda 环境等）。
-
-基于您提供的**完整目录结构**和我们刚刚实现的**所有功能**，这是完全对齐现状的 **README.md**。
-
-请直接复制以下内容（已修正启动流程，加入了密钥体检步骤）：
-
------
-
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/yang-kun-long/PanguCrawl)
 # 🕸️ PanguCrawl (盘古爬虫)
 
 > **基于 LLM 决策委员会与统计学去噪的下一代深网内容爬虫系统**
